@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codezee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" style="color:#b74b4b ; font-size: 3.5rem; padding-top: 10px;">Portfolio</a></li>
+      <li class="hideOnMobile"><a href="#">Blog</a></li>
+      <li class="hideOnMobile"><a href="#">Products</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Forum</a></li>
+      <li class="hideOnMobile"><a href="#">Login</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+        <linearGradient id="EIPc0qTNCX0EujYwtxKaXa_MmupZtPbnw66_gr1" x1="12.066" x2="34.891" y1=".066" y2="22.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#EIPc0qTNCX0EujYwtxKaXa_MmupZtPbnw66_gr1)" d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"></path><linearGradient id="EIPc0qTNCX0EujYwtxKaXb_MmupZtPbnw66_gr2" x1="12.066" x2="34.891" y1="12.066" y2="34.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#EIPc0qTNCX0EujYwtxKaXb_MmupZtPbnw66_gr2)" d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"></path><linearGradient id="EIPc0qTNCX0EujYwtxKaXc_MmupZtPbnw66_gr3" x1="12.066" x2="34.891" y1="24.066" y2="46.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"></stop><stop offset=".85" stop-color="#1591d8"></stop></linearGradient><path fill="url(#EIPc0qTNCX0EujYwtxKaXc_MmupZtPbnw66_gr3)" d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"></path>
+        </svg></a></li>
+    </ul>
+  </nav>
+<div class="container">
+  <div class="image">
+    <img src="main.jpg">
+  </div>
+  <div class="text">
+    <h1 style="color: white;">Hi, It's <span style="color: #b74b4b;">Akash</span></h1>
+    <h1 style="color: white; margin-top: 5px;">I'm a <span style="color: #b74b4b;" class="auto-type"></span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto incidunt, dolore, ullam molestias culpa placeat optio nesciunt quia expedita magnam odit ipsa maxime sed quasi laboriosam animi! Tempora, minima illo.</p>
+    <div class="social-icons">
+      <button id="social-btn"><a href=""><i class="fa-brands fa-linkedin fa-lg" style="color: #b74b4b;"></i></a></button>
+      <button id="social-btn"><a href=""><i class="fa-brands fa-github fa-lg" style="color: #b74b4b;"></i></a></button>
+      <button id="social-btn"><a href=""><i class="fa-brands fa-x-twitter fa-lg" style="color: #b74b4b;"></i></a></button>
+      <button id="social-btn"><a href=""><i class="fa-brands fa-instagram fa-lg" style="color: #b74b4b;"></i></a></button>
+    </div>
+    <div class="hire"> <button>Hire Me</button></div>
+  </div>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  <script>
+     var typed = new Typed(".auto-type",{
+      strings : ["Programmer","Designer","Youtuber"],
+      typeSpeed : 150,
+      backSpeed : 150,
+      looped : true,
+      loopCount: Infinity
+
+    })
+  </script>
+</body>
+</html>
